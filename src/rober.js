@@ -10,23 +10,22 @@ class Rover {
 
   // function for direction
   turnRight = () => {
-    this.direction = direction.turn(true);
+    this.direction = direction.turn(this.direction, true);
   };
 
   turnLeft = () => {
-    this.direction = direction.turn(false);
+    this.direction = direction.turn(this.direction, false);
   };
-  /*
+
   moveForward() {
-    this.position = direction.forward(this.position);
+    this.position = direction.forward(this.direction, this.position);
     this.travelLog.push(this.position);
   }
 
   moveBackward() {
-    this.position = direction.backward(this.position);
+    this.position = direction.backward(this.direction, this.position);
     this.travelLog.push(this.position);
   }
-  */
 }
 
 export default Rover;
