@@ -1,5 +1,7 @@
 # mission-mars
 
+this project is practice for ES6. It is based on vue-js setup, but at first no vue-js things.
+
 ## Project setup
 ```
 yarn install
